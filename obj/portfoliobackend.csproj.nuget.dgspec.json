@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj": {}
+  },
+  "projects": {
+    "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
+        "projectName": "portfoliobackend",
+        "projectPath": "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
+        "packagesPath": "/Users/johnjameshodgins/.nuget/packages/",
+        "outputPath": "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnjameshodgins/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
