@@ -27,6 +27,18 @@ namespace portfoliobackend
         public void ConfigureServices(IServiceCollection services)
         {
 
+                  services.AddCors(options =>
+                    {
+                          options.AddDefaultPolicy(
+                           builder =>
+                       {
+                    // Add cross origin allowed domain
+                    builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+                  });
+      });
+
+       services.AddTransient<IRepository<Project>, ProjectRepository>();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

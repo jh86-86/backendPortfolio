@@ -4,4 +4,6 @@ public interface IRepository<T>
 {
   Task<IEnumerable<T>> GetAll();
 
+  void Delete(long id);
+
 }

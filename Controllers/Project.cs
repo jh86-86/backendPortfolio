@@ -30,4 +30,18 @@ public async Task<IActionResult> Get()
       return NotFound("Sorry there are no projects");
     }
 }
+
+[HttpDelete("{id}")]
+  public IActionResult Delete(long id)
+  {
+    try
+    {
+      _projectRepository.Delete(id);
+      return Ok($"Project at id {id} is successfully deleted.");
+    }
+    catch (Exception)
+    {
+      return BadRequest($"Sorry, project of id {id} cannot be deleted, since it does not exit.\nAre you sure the id is correct?");
+    }
+  }
 }
