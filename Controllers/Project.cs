@@ -59,4 +59,20 @@ public async Task<IActionResult> Get()
       return BadRequest("Sorry can not insert your project, is it valid?\nTry another project");
     }
   }
+
+  [HttpPut("{id}")]
+
+  public async Task<IActionResult> Put(long id, [FromBody] Project projectToPut)
+  {
+    try
+    {
+      projectToPut.Id = id;
+      var updatedProject = await _projectRepository.Update(projectToPut);
+      return Ok(updatedProject);
+    }
+    catch (Exception)
+    {
+      return BadRequest("Sorry can not update your project. Is your id and your project valid?");
+    }
+}
 }
