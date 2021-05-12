@@ -22,7 +22,13 @@ public class ProjectRepository : BaseRepository, IRepository<Project>
     public async Task<Project> Insert(Project projectToInsert)
   {
     using var connection = CreateConnection();
-    return await connection.QuerySingleAsync<Project>("INSERT INTO project(Name, Link , Image, ProjectInfo,Description) VALUES (@Name, @Link, @Image, @ProjectInfo,@Description)  RETURNING *", projectToInsert);
+    return await connection.QuerySingleAsync<Project>("INSERT INTO projects (Name, Link , Image, ProjectInfo,Description) VALUES (@Name, @Link, @Image, @ProjectInfo,@Description)  RETURNING *", projectToInsert);
   }
   
+  public async Task<Project> Update(Project projectToUpdate)
+
+  {
+    using var connection = CreateConnection();
+    return await connection.QuerySingleAsync<Project>("UPDATE Projects SET Name =@Name, Link=@Link, Image=@Image, ProjectInfo=@ProjectInfo, Description=@Description WHERE Id = @Id RETURNING *;", projectToUpdate);
+  }
 }
