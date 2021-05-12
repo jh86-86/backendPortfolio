@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TG3nMRsNxuNJCKhRcn22wS/dCu3p29uXuJFNjTB19ux20qU0JUnDf6W/2xiedQrVoCUpuWxPNHwg+071VBB1/A==",
+  "dgSpecHash": "H5JV9A9YOTzKe1A3x/2VXQD4gEs7GAgjYGzflUThdcUCVzo/pVx+zXfA57rDQWrnt9hfvXJqXthuxMMpbZvhOw==",
   "success": true,
-  "projectFilePath": "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
+  "projectFilePath": "/Users/johnjameshodgins/Documents/React Project/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
   "expectedPackageFiles": [
     "/Users/johnjameshodgins/.nuget/packages/dapper/2.0.78/dapper.2.0.78.nupkg.sha512",
     "/Users/johnjameshodgins/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

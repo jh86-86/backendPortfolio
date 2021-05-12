@@ -292,11 +292,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
+      "projectUniqueName": "/Users/johnjameshodgins/Documents/React Project/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
       "projectName": "portfoliobackend",
-      "projectPath": "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
+      "projectPath": "/Users/johnjameshodgins/Documents/React Project/Pro portfolio/front/portfolioBackend/portfoliobackend/portfoliobackend.csproj",
       "packagesPath": "/Users/johnjameshodgins/.nuget/packages/",
-      "outputPath": "/Users/johnjameshodgins/Documents/Pro portfolio/front/portfolioBackend/portfoliobackend/obj/",
+      "outputPath": "/Users/johnjameshodgins/Documents/React Project/Pro portfolio/front/portfolioBackend/portfoliobackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/johnjameshodgins/.nuget/NuGet/NuGet.Config"

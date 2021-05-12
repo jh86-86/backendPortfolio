@@ -44,4 +44,19 @@ public async Task<IActionResult> Get()
       return BadRequest($"Sorry, project of id {id} cannot be deleted, since it does not exit.\nAre you sure the id is correct?");
     }
   }
+
+    [HttpPost]
+
+  public async Task<IActionResult> Post([FromBody] Project projectToPost)
+  {
+    try
+    {
+      var postedProject = await _projectRepository.Insert(projectToPost);
+      return Created($"/project/{postedProject.Id}", postedProject);
+    }
+    catch (Exception)
+    {
+      return BadRequest("Sorry can not insert your project, is it valid?\nTry another project");
+    }
+  }
 }

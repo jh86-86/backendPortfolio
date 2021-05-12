@@ -18,4 +18,11 @@ public class ProjectRepository : BaseRepository, IRepository<Project>
     using var connection= CreateConnection();
     connection.Execute("DELETE FROM Projects WHERE Id= @Id ", new {Id= id});
   }
+
+    public async Task<Project> Insert(Project projectToInsert)
+  {
+    using var connection = CreateConnection();
+    return await connection.QuerySingleAsync<Project>("INSERT INTO project(Name, Link , Image, Description) VALUES (@Name, @Link, @Image, @Description)  RETURNING *", projectToInsert);
+  }
+  
 }

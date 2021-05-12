@@ -6,4 +6,6 @@ public interface IRepository<T>
 
   void Delete(long id);
 
+  Task<T> Insert(T t);
+
 }
